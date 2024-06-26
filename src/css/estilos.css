@@ -5,12 +5,16 @@ body {
     background-size:cover;
 }
 
+.arrows {
+    width: 50px;
+    height: 50px;
+}
+
 .cabecalho {
-    display: flex;
-    background-color: red;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
+    display: flex;
     gap: 15px;
 }
 
@@ -31,7 +35,6 @@ body {
 
 .slider {
     display: flex;
-    background-color: aquamarine;
     justify-content: center;
     align-items: center;
     margin: 5%;
@@ -39,26 +42,90 @@ body {
 }
 
 .list {
-    background-color: blue;
     height: 50%;
     width: 40%;
 }
 
 .card {
-    background-color: blueviolet;
+    background-color: #59270A;
     justify-content: space-between;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     display: flex;
     height: 100%;
     padding: 5%;
     opacity: 0;
 
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
+    box-shadow: rgba(180, 180, 189, 0.2) 0px 7px 29px 0px ;
     transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.type {
+    background-color: #D97014;
+    border: rgb(63, 57, 57) solid;
+    border-radius: 10px;
+    
+    text-align: center;
+    font-size: 17.5px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+
+    padding: 0.5%;
 }
 
 .card.selected {
     opacity: 1;
     z-index: 1;
+}
+
+.card .infos {
+    background-color: #D97014;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-items: center;
+    padding: 8px 10px;
+    display: flex;
+}
+
+.card .infos .names {
+    font-size: 22px;
+    color: white;
+}
+
+.card .infos .HP {
+    background-color: black;
+    border-radius: 20px;
+    padding: 6px 10px;
+    color: white;
+}
+
+.fundo-1 {
+    background: url(../img/Max_Fundo.jpeg);
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    border: #F2884B solid;
+    border-width: 2.5px;
+}
+
+.fundo-2 {
+    background: url(../img/Furiosa_Fundo.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.fundo-3 {
+    background: url(../img/ImmortanJoe_Fundo.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.description {
+    background-color: #F2C7AE;
+    border: #F2884B solid;
+    border-width: 2.5px;
+    
+    padding: 1.5%;
 }
