@@ -1,21 +1,29 @@
 body {
-    font-family: 'Radio Canada Big';
-    background-image: url(../img/Desert.jpg);
+    font-family: "Playwrite IS";
+
+    background-image: url(../img/Background.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .arrows {
-    width: 50px;
-    height: 50px;
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
 }
 
 .cabecalho {
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    display: flex;
-    gap: 15px;
+    text-align: center;
+    padding: 60px 0;
 }
 
 .image {
@@ -37,37 +45,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5%;
-    gap: 10%;
+    gap: 80px;
 }
 
 .list {
-    height: 50%;
-    width: 40%;
+    width: 330px;
+    height: 520px;
+    position: relative;
 }
 
 .card {
     background-color: #59270A;
-    justify-content: space-between;
-    flex-direction: column;
-    position: absolute;
-    display: flex;
-    height: 100%;
-    padding: 5%;
-    opacity: 0;
 
-    box-shadow: rgba(180, 180, 189, 0.2) 0px 7px 29px 0px ;
-    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    padding: 12px;
+
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
     border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .type {
+    font-weight: 700;
+    font-size: 14px;
+
     background-color: #D97014;
     border: rgb(63, 57, 57) solid;
     border-radius: 10px;
     
     text-align: center;
-    font-size: 17.5px;
     margin-bottom: 1%;
     margin-top: 1%;
 
@@ -80,17 +92,17 @@ body {
 }
 
 .card .infos {
+    display: flex;
     background-color: #D97014;
     justify-content: space-between;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     align-items: center;
     padding: 8px 10px;
-    display: flex;
 }
 
 .card .infos .names {
-    font-size: 22px;
+    font-size: 16px;
     color: white;
 }
 
@@ -101,10 +113,20 @@ body {
     color: white;
 }
 
+.image {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+}
+
 .fundo-1 {
     background: url(../img/Max_Fundo.jpeg);
     background-repeat:no-repeat;
     background-size:cover;
+
+    height: 375px;
+    width: 100%;
 
     border: #F2884B solid;
     border-width: 2.5px;
@@ -114,18 +136,75 @@ body {
     background: url(../img/Furiosa_Fundo.jpg);
     background-repeat:no-repeat;
     background-size:cover;
+
+    width: 100%;
+    height: 400px; 
+    overflow: hidden; 
+
+    border: #F2884B solid;
+    border-width: 2.5px;
 }
 
 .fundo-3 {
     background: url(../img/ImmortanJoe_Fundo.jpg);
     background-repeat:no-repeat;
     background-size:cover;
+
+    height: 400px;
+    width: 100%;
+
+    border: #F2884B solid;
+    border-width: 2.5px;
+}
+
+.fundo-4 {
+    background: url(../img/GyroCaptain_Background.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    height: 400px;
+    width: 100%;
+
+    border: #F2884B solid;
+    border-width: 2.5px;
+}
+
+.fundo-5 {
+    background: url(../img/LordHumungus_Background.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    height: 232.5px;
+    width: 100%;
+
+    border: #F2884B solid;
+    border-width: 2.5px;
+}
+
+.fundo-6 {
+    background: url(../img/PretorianJack_Background.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    height: 232.5px;
+    width: 100%;
+
+    border: #F2884B solid;
+    border-width: 2.5px;
 }
 
 .description {
-    background-color: #F2C7AE;
+    font-weight: 500;
+    font-size: 12px;
+
+    background-color: #ebcfc1;
     border: #F2884B solid;
     border-width: 2.5px;
     
-    padding: 1.5%;
+    padding: 2.5%;
+    
+
+    max-width: 100%;
+    text-align: justify;
+    overflow-y: auto;
 }

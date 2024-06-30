@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mad Max Cards</title>
+
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+ES:wght@100..400&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -19,14 +27,14 @@
     </header>
 
     <main class="slider">
-        <button id="btn-left">
+        <div class="btn-arrow" id="btn-left">
              <img class="arrows" src="/src/icons/Left Arrow.png" alt="Left Arrow">
-        </button>
+        </div>
 
         <ul class="list">
             <li class="card selected">
                 <div class="infos">
-                    <h2 class="names">Max Rockatansky</h2>
+                    <p class="names">Max Rockatansky</p>
                     <p class="HP">12/10</p>
                 </div>
 
@@ -39,21 +47,21 @@
                 </div>
 
                 <div class="description">
-                    <h3>Descrição</h3>
-                    <p>protagonista da série de filmes pós-apocalípticos "Mad Max"
-                    , criada pelo diretor George Miller. Ele é um ex-policial que 
-                    se torna um guerreiro solitário em um mundo desolado por guerras
-                    e escassez de recursos. Interpretado originalmente por Mel Gibson 
-                    nos filmes clássicos "Mad Max" (1979), "Mad Max 2: The Road Warrior"
-                    (1981), e "Mad Max Beyond Thunderdome" (1985), Max é conhecido por 
-                    sua habilidade como motorista e sua luta constante pela sobrevivência
-                    em um ambiente extremamente hostil.</p>
+                    <h3>Description</h3>
+                    <p> Max Rockatansky, known as "Mad Max," is the central character 
+                        in the Mad Max series. Originally a police officer, he becomes 
+                        a lone drifter after losing his family in a lawless, post-apocalyptic 
+                        world. Portrayed by Mel Gibson and later Tom Hardy, Max is a tough 
+                        survivor navigating a harsh wasteland, driven by a deep sense of justice.
+                        Despite his solitary nature and personal scars, he often helps others in their 
+                        fight against brutal warlords, embodying resilience and humanity amidst chaos.
+                    </p>
                 </div>
             </li>
             <li class="card">
-                <div>
-                    <h2>Imperator Furiosa</h2>
-                    <p>12/10</p>
+                <div class="infos">
+                    <p class="names">Imperator Furiosa</p>
+                    <p class="HP">12/10</p>
                 </div>
 
                 <div class="fundo-2">
@@ -64,22 +72,24 @@
                     <p>Lone Wander - Human Soldier</p>
                 </div>
 
-                <div>
-                    <h3>Descrição</h3>
-                    <p>protagonista da série de filmes pós-apocalípticos "Mad Max"
-                    , criada pelo diretor George Miller. Ele é um ex-policial que 
-                    se torna um guerreiro solitário em um mundo desolado por guerras
-                    e escassez de recursos. Interpretado originalmente por Mel Gibson 
-                    nos filmes clássicos "Mad Max" (1979), "Mad Max 2: The Road Warrior"
-                    (1981), e "Mad Max Beyond Thunderdome" (1985), Max é conhecido por 
-                    sua habilidade como motorista e sua luta constante pela sobrevivência
-                    em um ambiente extremamente hostil.</p>
+                <div class="description">
+                    <h3>Description</h3>
+                    <p>
+                        Imperator Furiosa, played by Charlize Theron in Mad Max: Fury Road, 
+                        is a formidable warrior who rebels against the tyrant Immortan Joe. 
+                        With a mechanical arm and exceptional combat skills, she leads a daring 
+                        escape to free his enslaved wives. Fierce and resilient, Furiosa becomes
+                        a beacon of hope and defiance in the harsh desert wasteland.With a 
+                        mechanical arm and unparalleled combat skills, Furiosa is a powerful 
+                        and strategic leader. She embodies strength, resilience, and a deep 
+                        desire for redemption and freedom.
+                    </p>
                 </div>
             </li>
             <li class="card">
-                <div>
-                    <h2>Immortan Joe</h2>
-                    <p>12/10</p>
+                <div class="infos">
+                    <p class="names">Immortan Joe</p>
+                    <p class="HP">9/9</p>
                 </div>
 
                 <div class="fundo-3">
@@ -90,23 +100,107 @@
                     <p>Lone Wander - Human Soldier</p>
                 </div>
 
-                <div>
+                <div class="description">
+                    <h3>Description</h3>
+                    <p>
+                        Immortan Joe is the primary antagonist in Mad Max: Fury Road. Portrayed 
+                        by Hugh Keays-Byrne, he is a ruthless and tyrannical warlord ruling over 
+                        the Citadel, a fortress in a desolate, post-apocalyptic wasteland. Joe controls 
+                        the region’s scarce water supply, maintaining power through fear and oppression.
+                        Physically imposing and adorned with a grotesque mask and body armor, 
+                        Joe is a symbol of brute force and exploitation.He keeps a harem of wives for breeding 
+                        and commands a fanatical army called the War Boys, who worship him as a god. 
+                    </p>
+                </div>
+            </li>
+            <li class="card">
+                <div class="infos">
+                    <p class="names">Gyro Captain</p>
+                    <p class="HP">6/9</p>
+                </div>
+
+                <div class="fundo-4">
+                    <img class="image" src="./src/img/GyroCaptain.png" alt="GyroCaptain">
+                </div>
+
+                <div class="type">
+                    <p>Legendary Creature - Human Soldier</p>
+                </div>
+
+                <div class="description">
+                    <h3>Description</h3>
+                    <p>
+                        Captain Gyro, also known as the Gyro Captain, is a quirky and resourceful 
+                        character in "Mad Max 2: The Road Warrior," played by Bruce Spence. He roams 
+                        the post-apocalyptic desert in his gyrocopter, initially trying to rob Max but 
+                        eventually joining forces with him. Dressed in eccentric attire, the Gyro Captain 
+                        uses clever traps and his pet snakes to survive. Despite his oddities, he proves
+                        brave and loyal, helping Max against the marauding forces of Lord Humungus and 
+                        later leading the settlers towards a hopeful future in north.
+                    </p>
+                </div>
+            </li>
+            <li class="card">
+                <div class="infos">
+                    <p class="names">Lord Humungus</p>
+                    <p class="HP">12/12</p>
+                </div>
+
+                <div class="fundo-5">
+                    <img class="image" src="./src/img/LordHumungus.png" alt="Lord Humungus">
+                </div>
+
+                <div class="type">
+                    <p>Legendary Creature - Human Soldier</p>
+                </div>
+
+                <div class="description">
+                    <h3>Description</h3>
+                <p>
+                    Humungus is a prominent character in the movie "Mad Max 2: The Road Warrior." 
+                    He is the leader of a violent gang known as the Marauders, who terrorize survivors 
+                    in a post-apocalyptic wasteland. Humungus is depicted as a menacing figure, wearing 
+                    a distinctive hockey mask and commanding his gang with ruthless efficiency. He plays 
+                    a central antagonist role, pursuing Max and others for control over valuable resources 
+                    like gasoline. Despite his intimidating appearance and actions, Humungus is also 
+                    portrayed with a sense of tragic grandeur, embodying the harsh survival instincts 
+                    of a world plunged into chaos.
+                </p>
+                </div>
+            </li>
+            <li class="card">
+                <div class="infos">
+                    <p class="names">Pretiorian Jack</p>
+                    <p class="HP">9/9</p>
+                </div>
+
+                <div class="fundo-6">
+                    <img class="image" src="./src/img/PretorianJack.png" alt="Pretorian Jack">
+                </div>
+
+                <div class="type">
+                    <p>Legendary Creature - Human Soldier</p>
+                </div>
+
+                <div class="description">
                     <h3>Descrição</h3>
-                    <p>protagonista da série de filmes pós-apocalípticos "Mad Max"
-                    , criada pelo diretor George Miller. Ele é um ex-policial que 
-                    se torna um guerreiro solitário em um mundo desolado por guerras
-                    e escassez de recursos. Interpretado originalmente por Mel Gibson 
-                    nos filmes clássicos "Mad Max" (1979), "Mad Max 2: The Road Warrior"
-                    (1981), e "Mad Max Beyond Thunderdome" (1985), Max é conhecido por 
-                    sua habilidade como motorista e sua luta constante pela sobrevivência
-                    em um ambiente extremamente hostil.</p>
+                    <p>
+                        Pretorian Jack is a character from the "Mad Max: Furiosa" film, known for his 
+                        loyalty and fierce combat skills as a member of Immortan Joe's elite guards, the War Boys. 
+                        Jack, like his fellow War Boys, is fiercely devoted to Immortan Joe, the tyrannical 
+                        ruler of the Citadel. He participates in high-speed vehicular battles and relentless 
+                        pursuits against Furiosa and Max, who challenge Immortan Joe's authority. Jack's distinctive 
+                        appearance includes war paint, tattoos, and a strong adherence to the cult-like beliefs 
+                        propagated by Immortan Joe. His role highlights themes of fanaticism, survival, and the 
+                        brutal societal hierarchy within the dystopian world depicted in the Mad Max universe.
+                </p>
                 </div>
             </li>
         </ul>
 
-        <button id="btn-right">
+        <div class="btn-arrow" id="btn-right">
             <img class="arrows" src="/src/icons/Right_Arrow.png" alt="Left Arrow" >
-        </button>
+        </div>
     </main>
 
     <script src="./src/js/index.js"></script>
